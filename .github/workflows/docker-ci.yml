@@ -34,7 +34,7 @@ jobs:
         run: docker compose up -d
         
       - name: Wait for server
-        run: ./wait-for-server.sh
+        run: C:\CS1632\supplementary-exercise-4-dockers-Misael-Ventura1\tests\wait-for-webserver.sh
 
       - name: Run Playwright Tests
         run: npx playwright test --project=chromium
